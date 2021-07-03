@@ -1,0 +1,7 @@
+.classpath*
+.project*
+.setting*
+test-output/
+target/
+testng_android_local.xml*
+.DS_Store*
