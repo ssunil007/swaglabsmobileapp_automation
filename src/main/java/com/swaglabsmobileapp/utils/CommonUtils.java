@@ -13,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -391,10 +392,10 @@ public class CommonUtils {
 	public boolean loginWithFingerAuthentication(WebDriver dr, BaseObjRepo obj, String pin) {
 
 		try {
-			obj.biometricLoginBtn(dr).click();
-			obj.plsSignTxt(dr).isDisplayed();
-			obj.fingerprintIcon(dr).isDisplayed();
-			obj.touchFingerprintSensorTxt(dr).isDisplayed();
+			obj.getBiometricLoginBtn(dr).click();
+			obj.getPlsSignTxt(dr).isDisplayed();
+			obj.getFingerprintIcon(dr).isDisplayed();
+			obj.getTouchFingerprintSensorTxt(dr).isDisplayed();
 			Thread.sleep(2000);
 			enablingFingerPrintAuthentication(pin);
 		} catch (Exception e) {
@@ -403,6 +404,8 @@ public class CommonUtils {
 		}
 		return true;
 	}
+	
+
 
 }
 

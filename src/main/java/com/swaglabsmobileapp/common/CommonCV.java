@@ -10,6 +10,12 @@ public class CommonCV {
 	// Validations on Login Screen 
 	public static String loginPin = "1234";
 	
+	// Checkoutout Informaiton
+	public static String firstName = "Jon";
+	public static String lastName = "Snow";
+	public static String zipCode = "560038";
+			
+	
 	
 	
 }
