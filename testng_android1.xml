@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CheckoutFeature_Suite">
+	<parameter name="environment" value="${environment}" />
+	<parameter name="platform" value="${platform}" />
+	<parameter name="deviceName" value="${deviceName}" />
+	<parameter name="platformVersion" value="${platformVersion}" />
+	<parameter name="appPath" value="${appPath}" />
+	<parameter name="logFilePath" value="${logFilePath}" />
+	<test name="Checkout Scenario Test">
+		<classes>
+			<class name="com.swaglabsmobileapp.scenarios.CheckoutScenarioTest">
+			<methods>
+					<include name="verifyHomeScreen_Validations" />
+					<include name="verifyCartBatchCount_AddOrRemoveItems" />
+					 <include name="verifyYourCartScreen_AddOrRemoveItems" />
+					 <include name="verifyCheckoutOverviewScreen_RemovingItems"/>
+					  <include name="verifyCheckoutOverviewScreen_AddingItemsAndCheckOut"/>
+				</methods>
+			
+			</class>
+		</classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->
