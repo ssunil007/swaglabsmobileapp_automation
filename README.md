@@ -49,10 +49,12 @@ To enable this on Android emulators you need to do the following (when you have 
 
 * When prompt to place your finger on the scanner, emulate the fingerprint using adb command.
 
-```adb -e emu finger touch <finger_id>
+```
+    adb -e emu finger touch <finger_id>
 
-#Example
-adb -e emu finger touch 1234
+    #Example
+    adb -e emu finger touch 1234
+
 ```
 * You should see fingerprint detected message. That’s it. Done.
 
@@ -74,7 +76,9 @@ Make sure you remember the fingerprint number you selected, that needs to be use
 
 5. Run the below command from project directory to start execution
 
-``` mvn clean test -Drelease.arguments=testng_android1.xml  -Dplatform=Android -DdeviceName=Android -DplatformVersion=10.0 -DappPath=/src/test/resources/AppFile/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk -DlogFilePath=/src/test/resources/Screenshots/
+``` 
+    mvn clean test -Drelease.arguments=testng_android1.xml  -Dplatform=Android -DdeviceName=Android -DplatformVersion=10.0 -DappPath=/src/test/resources/AppFile/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk -DlogFilePath=/src/test/resources/Screenshots/
+
 ```
 
 
